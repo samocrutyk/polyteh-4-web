@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Запропонувати місце</title>
+    </head>
+    <body>
+        <header>
+            <h1>Запропонувати місце для наступного рейтингу</h1>
+            <nav>
+                <a href="index.html">Головна</a> |
+                <a href="city-lviv.html">Львів</a> |
+                <a href="city-kyiv.html">Київ</a> |
+                <a href="city-karpaty.html">Карпати</a> |
+                <a href="form.html">Запропонувати місце</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Форма пропозиції</h2>
+                <form action="#" method="post">
+                    <p><label for="name">Ваше ім'я:</label><br>
+                    <input type="text" id="name" name="name" required></p>
+                    <p><label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required></p>
+                    <p><label for="place">Назва місця:</label><br>
+                    <input type="text" id="place" name="place" required></p>
+                    <p><label for="type">Тип місця:</label><br>
+                    <select id="type" name="type" required>
+                        <option value="">Оберіть тип</option>
+                        <option value="city">Місто</option>
+                        <option value="mountains">Гори</option>
+                        <option value="nature">Природа</option>
+                        <option value="other">Інше</option>
+                    </select></p>
+                    <p><label for="reason">Чому варто відвідати це місце?</label><br>
+                    <textarea id="reason" name="reason" rows="6" cols="40" required></textarea></p>
+                    <p><button type="submit">Надіслати</button>
+                    <button type="reset">Очистити</button></p>
+                </form>
+            </section>
+        </main>
+        <footer><p>Автор: Чопко Богдан</p></footer>
+    </body>
+</html>

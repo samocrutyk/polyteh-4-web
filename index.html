@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Лабораторні роботи</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #111;
+    --surface: #222;
+    --surface-2: #333;
+    --text: #eee;
+    --muted: #888;
+    --accent: #fff;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Hack Nerd Font Mono", monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 440px;
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+
+  .header p {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .labs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .lab-btn {
+    background: var(--surface);
+    color: var(--text);
+    text-decoration: none;
+    padding: 16px 20px;
+    border-radius: 32px;
+    border: 2px solid transparent;
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background .15s, border-color .15s, transform .15s;
+  }
+
+  .lab-btn span {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  .lab-btn:hover {
+    background: var(--surface-2);
+    border-color: var(--accent);
+  }
+
+  .lab-btn:active {
+    transform: scale(0.98);
+  }
+
+  .footer {
+    color: var(--muted);
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>Радий вас вітати!</h1>
+      <p>Ось мої лабораторні роботи:</p>
+    </div>
+
+    <div class="labs">
+      <a class="lab-btn" href="lab1/index.html">
+        <span>Лабораторна #1</span> ➔
+      </a>
+      <a class="lab-btn" href="lab2/index.html">
+        <span>Лабораторна #2</span> ➔
+      </a>
+      <a class="lab-btn" href="lab3/index.html">
+        <span>Лабораторна #3</span> ➔
+      </a>
+      <a class="lab-btn" href="lab4/index.html">
+        <span>Лабораторна #4</span> ➔
+      </a>
+    </div>
+
+    <div class="footer">
+      Автор: Чопко Богдан
+    </div>
+  </div>
+
+</body>
+</html>
